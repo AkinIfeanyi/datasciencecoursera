@@ -99,3 +99,28 @@ names(x)
 names (x) <- c('foo','bar')
 x
 names(x)
+g <- c('a','b','c','d','e')
+g[1]
+g[3]
+g[1:3]
+g[g > 'c']
+u <- g > 'b'
+u
+l <- list(goo = 1:4, far = 0.7)
+l[1]
+l[2]
+l[3]
+l[[1]]
+l[[2]]
+l$goo
+l$far
+l[[bar]] ##An intentional error to remind myself of the importance of the quotation marks
+l[['bar']]
+l[['far']]
+l['goo']
+l[['goo']]
+q <- list( rat = 1:5, god = 2.0, leg = 'teeth')
+akin <- 'rat'
+q[akin] ##computed index for 'rat'
+q[[akin]] ##same as above
+q$akin ##element 'akin' does not exist
